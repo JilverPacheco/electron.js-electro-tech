@@ -1,0 +1,1170 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../assets/styles/container.css" />
+    <!-- <link rel="stylesheet" href="../../assets/styles/container-theory.css" /> -->
+    <link rel="stylesheet" href="../../assets/styles/Styles.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+
+    <title>Electró-TECH | Electrónica II</title>
+  </head>
+  <body class="animate__animated animate__fadeIn">
+    <!-- ScrollTop Button -->
+    <a class="scroll-btn" href="#inicio">
+      <div class="scrollTop">▲</div>
+    </a>
+
+    <!-- Hamburger Menu -->
+    <div class="btn animate__animated animate__fadeIn">
+      <div class="menu-btn__burger"></div>
+    </div>
+
+    <!-- Sidebar -->
+    <nav class="sidebar">
+      <!-- <div class="text">
+        <a href="https://web.udi.edu.co/"
+          ><img src="../../assets/img/logo/LOGO_UDI.png" class="logo"
+        /></a>
+        Electró-TECH
+      </div> -->
+      <ul>
+        <li>
+          <p class="feat-btn">Cartillas<span class="first">▼</span></p>
+          <ul class="feat-show">
+            <li>
+              <a
+                href="https://drive.google.com/file/d/11D5Hk9Syx7tWeIDjW1PruzjYY3MO222e/view?usp=sharing"
+                >Aplicación para la obtencion de valores BJT y su respectiva
+                gráfica por medio de Python</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li>
+          <p class="serv-btn">
+            Teória de los transistores<span class="second">▼</span>
+          </p>
+          <ul class="serv-show">
+            <li>
+              <a href="#recta-carga" class="sidebarButton">Recta de carga</a>
+            </li>
+            <li>
+              <a href="#BJT" class="sidebarButton">Transistores BJT</a>
+            </li>
+            <li>
+              <a href="#bjt-tipica" class="sidebarButton"
+                >BJT - Polarización típica</a
+              >
+            </li>
+            <li>
+              <a href="#bjt-estabilizada" class="sidebarButton"
+                >BJT - Polarización estabilizada en el emisor</a
+              >
+            </li>
+            <li>
+              <a href="#bjt-divisor-tension" class="sidebarButton"
+                >BJT - Polarización por divisor de tensión</a
+              >
+            </li>
+
+            <li>
+              <a href="#condensadores" class="sidebarButton"
+                >Condensadores de acoplo y desacoplo</a
+              >
+            </li>
+            <li><a href="#modelo-t" class="sidebarButton">Modelo T</a></li>
+            <li>
+              <a href="#modelo-doblet" class="sidebarButton">Modelo π</a>
+            </li>
+            <li>
+              <a href="#ganacia-voltaje-av" class="ssidebarButton"
+                >Ganancia en voltaje AV</a
+              >
+            </li>
+            <li>
+              <a href="#amplificadores-multietapa-bjt" class="sidebarButton"
+                >Amplificadores multietapa BJT</a
+              >
+            </li>
+            <li>
+              <a href="#JFET" class="sidebarButton">Transistores JFET</a>
+            </li>
+            <li>
+              <a href="#jfet-tipica" class="sidebarButton"
+                >JFET - Polarización típica</a
+              >
+            </li>
+            <li>
+              <a href="#jfet-auto-polarizada" class="sidebarButton"
+                >JFET - Polarización auto-polarizada</a
+              >
+            </li>
+            <li>
+              <a href="#jfet-divisor-tension" class="sidebarButton"
+                >JFET - Polarización por divisor de tensión</a
+              >
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Banner -->
+    <section class="banner" id="inicio">
+      <h1 class="banner-title">Electrónica II</h1>
+      <h2 class="banner-sub-title">Curso académico</h2>
+      <!-- <img
+        class="animate__animated animate__fadeIn"
+        src="../../assets/img/logo/LOGO_PROGRAMA_ELECTRONICA.png "
+      /> -->
+      <a class="animate__animated animate__fadeIn" href="../index.html"
+        >Volver a inicio</a
+      >
+    </section>
+
+    <section class="proyects reveal">
+      <h1 class="reveal">Teória de los transistores</h1>
+    </section>
+    <!-- Container -->
+    <section class="container" id="recta-carga">
+      <div class="reveal">
+        <h1 class="title">Recta de carga</h1>
+        <p>
+          <strong>Recta de carga.</strong> El punto de corte de la recta de
+          carga con la exponencial también llamado el punto Q, “punto de
+          trabajo" o "punto de funcionamiento" es la solución.
+        </p>
+        <p>
+          Este punto Q se controla variando Vce e Ic. Al punto de corte con el
+          eje X se le llama "Corte" y al punto de corte con el eje Y se le llama
+          "Saturación".
+        </p>
+        <img src="../../assets/img/recta-carga.jpg" class="img-250" />
+        <p class="url-direction">
+          <b>Fuente: </b
+          ><i
+            >https://electronicavm.files.wordpress.com/2011/02/polarizacic3b3n-del-transistor.pdf</i
+          >
+        </p>
+
+        <p>
+          <strong>Saturación del transistor.</strong> El término “saturación” se
+          aplica a cualquier sistema donde los niveles han alcanzado su valor
+          máximo.
+        </p>
+        <p>
+          Para un transistor que opera en la región de saturación la corriente
+          es un valor máximo para el diseño particular. El transistor se
+          encuentra en saturación cuando el voltaje colector emisor sea cero, es
+          decir, VCE = 0.
+        </p>
+        <img src="../../assets/img/punto-saturacion.gif" class="img-250" />
+        <p class="url-direction">
+          <b>Fuente: </b
+          ><i>https://unicrom.com/wp-content/uploads/Curvas_transt_real1.gif</i>
+        </p>
+
+        <p>
+          <strong>Punto de corte del transistor.</strong> El transistor se
+          encuentra en la región de corte cuando IC = 0. Para dejar en cero la
+          corriente de colector, se requiere tener en cero la corriente de base
+          IB. Esta será cero cuando VBB = 0.
+        </p>
+        <img src="../../assets/img/Punto-corte.gif" class="img-250" />
+        <p class="url-direction">
+          <b>Fuente: </b
+          ><i>https://unicrom.com/wp-content/uploads/Curvas_transt_real1.gif</i>
+        </p>
+      </div>
+    </section>
+    <section class="container" id="BJT">
+      <div class="reveal">
+        <h1 class="title">Transistores BJT</h1>
+        <p>
+          El transistor bipolar es un dispositivo de tres terminales -emisor,
+          colector y base-, que, dependiendo su fabricación, puede ser de dos
+          tipos: NPN y PNP.
+        </p>
+        <ol>
+          <li>
+            La zona de emisor es la más dopada de las tres, es la zona encargada
+            de inyectar portadores mayoritarios hacia la base.
+          </li>
+          <li>
+            La base tiene un nivel de dopado netamente inferior al de la zona de
+            emisor. Se trata de una zona con un espesor muy inferior al de las
+            capas exteriores. su función es la de dejar pasar la mayor parte
+            portadores posibles enviados por el emisor hacia el colector.
+          </li>
+          <li>
+            La zona de colector, como su propio nombre indica es la encargada de
+            recoger los portadores que han sido enviados por el emisor y que han
+            logrado atravesar la base. Es la zona que tiene menos nivel de
+            dopaje de las tres.
+          </li>
+        </ol>
+
+        <p>
+          Los transistores BJT se distinguen de dos maneras: tipo NPN y PNP. De
+          forma gráfica podemos fijarnos en la flecha que se encuentra en el
+          terminal del emisor.
+        </p>
+        <img
+          src="../../assets/img/Cursos/electronica-2/tipos-transistor-bjt.png"
+          alt=""
+        />
+        <p class="url-direction">
+          <b>Fuente: </b><i>http://mdgomez.webs.uvigo.es/DEI/Guias/tema5.pdf</i>
+        </p>
+        <p>
+          En un NPN esta flecha apunta hacia fuera del transistor; en un PNP la
+          flecha apunta hacia dentro. Además, dicha flecha nos indica en que
+          sentido la corriente circula por el emisor del transistor.
+        </p>
+
+        <p>
+          En general se definen una serie de tensiones y corrientes en el
+          transistor
+        </p>
+        <div class="wrapper__information">
+          <div class="wrapper__content-images">
+            <h3>Flujo de corrientes y voltajes</h3>
+            <div class="wrapper__images">
+              <div>
+                <img
+                  src="../../assets/img/Cursos/electronica-2/corrientes-transistor-bjt.png"
+                  alt="malla-base-emisor-fija"
+                />
+                <p class="url-direction">
+                  <b>Imagen 1: </b><i>Corrientes de un BJT.</i>
+                </p>
+              </div>
+              <div>
+                <img
+                  src="../../assets/img/Cursos/electronica-2/tensiones-transistor-bjt.png"
+                  alt="malla-base-emisor-fija"
+                />
+                <p class="url-direction">
+                  <b>Imagen 2: </b><i>Tensiones de un BJT.</i>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="url-direction">
+          <b>Fuentes: </b
+          ><i>http://mdgomez.webs.uvigo.es/DEI/Guias/tema5.pdf.</i>
+        </p>
+      </div>
+    </section>
+    <section class="container" id="bjt-tipica">
+      <div class="reveal">
+        <h1 class="title">BJT - Polarización fija</h1>
+        <p>
+          También llamada “polarización típica”, el circuito está formado por un
+          transistor, dos resistencias, una en la base (RB), otra en el colector
+          (RC), y una fuente de alimentación (VCC).
+        </p>
+        <p>
+          Este circuito recibe el nombre de circuito de polarización fija o
+          típica y determina el punto Q de reposo del transistor para unos
+          valores dados de VCC, RB y RC. Es el circuito más sencillo, pero
+          también el más inestable con las variaciones de la temperatura.
+        </p>
+        <div class="wrapper__information">
+          <div class="wrapper__content-images">
+            <h3>Estructura</h3>
+            <div class="wrapper__images">
+              <div>
+                <img
+                  src="../../assets/img/formulas/MALLA_FIJA_1.jpg"
+                  alt="malla-base-emisor-fija"
+                />
+                <p class="url-direction">
+                  <b>Fuente imagen 1: </b
+                  ><i
+                    >Teoría de circuitos y dispositivos electrónicos, pág.
+                    164.</i
+                  >
+                </p>
+              </div>
+              <div>
+                <img
+                  src="../../assets/img/formulas/MALLA_FIJA_2.jpg"
+                  alt="malla-colector-emisor-fija"
+                />
+                <p class="url-direction">
+                  <b>Fuente imagen 2: </b
+                  ><i
+                    >Teoría de circuitos y dispositivos electrónicos, pág.
+                    165.</i
+                  >
+                </p>
+              </div>
+            </div>
+            <p>
+              <strong>Nota: </strong> El ejercicio anterior usa la fuente VCC
+              como sus fuentes principales, en ambientes reales puede ser asi de
+              igual manera, o con una fuente conectada a la base que tiene por
+              nombre VBB.
+            </p>
+          </div>
+        </div>
+
+        <div class="formules" id="polarizacion-tipica">
+          <h3>Fórmulas</h3>
+          <div>
+            <strong>Corriente de base</strong>
+            <img
+              src="../../assets/img/formulas/FIJA_CORRIENTE_BASE.jpg"
+              alt="c_base_fija"
+            />
+          </div>
+
+          <div>
+            <strong>Corriente de colector</strong>
+            <img
+              src="../../assets/img/formulas/FIIJA_CORRIENTE_COLECTOR.jpg"
+              alt="c_colector_fija"
+              class="img-80"
+            />
+          </div>
+
+          <div>
+            <strong>Corriente de emisor</strong>
+            <img
+              src="../../assets/img/formulas/FIJA_CORRIENTE_EMISOR.jpg"
+              alt="c_emisor_fija"
+            />
+          </div>
+
+          <div>
+            <strong>Voltaje colector-emisor</strong>
+            <img
+              src="../../assets/img/formulas/FIJA_VOLT_COLECTOR_EMISOR.jpg"
+              alt="v_colector_emisor_fija"
+              class="img-120"
+            />
+          </div>
+
+          <div>
+            <strong>Corriente de saturación></strong>
+            <img
+              src="../../assets/img/formulas/FIJA_CORRIENTE_SATURACION.jpg"
+              alt="c_saturación_fija"
+              class="img-180"
+            />
+          </div>
+
+          <div>
+            <strong>Voltaje de corte</strong>
+            <img
+              src="../../assets/img/formulas/FIJA_VOLT_CORTE.jpg"
+              alt="v_corte_fija"
+              class="img-180"
+            />
+          </div>
+
+          <div>
+            <strong>Voltaje de base con respecto a tierra</strong>
+            <img
+              src="../../assets/img/formulas/FIJA_VOLT_BASE_TIERRA.jpg"
+              alt="v_base_tierra_fija"
+              class="img-150"
+            />
+          </div>
+
+          <div>
+            <strong>Voltaje de colector con respecto a tierra</strong>
+            <img
+              src="../../assets/img/formulas/FIJA_VOLT_COLECTOR_TIERRA.jpg"
+              alt="v_colector_tierra_fija"
+              class="img-150"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="container" id="bjt-estabilizada">
+      <div class="reveal">
+        <h1 class="title">BJT - Polarización estabilizada en el emisor</h1>
+        <p>
+          El circuito está formado por un transistor, tres resistencias fijas,
+          una en la base (RB), otra en el colector (RC), una última en el emisor
+          (RE), y una fuente de alimentación (VCC).
+        </p>
+        <p>
+          Este tipo de polarización se asocia con la realimentación, es decir,
+          los cambios ocurridos en la señal de entrada del circuito con respecto
+          a la señal de salida del mismo, los cambios sufridos en la corriente
+          de colector provocan cambios en la corriente de base, básicamente,
+          este tipo de configuración es la misma que la polarización fija, pero
+          con la inclusión de una resistencia RE en el pin emisor del
+          transistor.
+        </p>
+        <div class="wrapper__information">
+          <div class="wrapper__content-images">
+            <h3>Estructura</h3>
+            <div class="wrapper__images">
+              <div>
+                <img
+                  src="../../assets/img/formulas/MALLA_ESTABILIZADA_1.png"
+                  alt="malla-base-emisor-estabilizada"
+                />
+                <p class="url-direction">
+                  <b>Fuente imagen 1: </b
+                  ><i
+                    >Teoría de circuitos y dispositivos electrónicos, pág.
+                    171</i
+                  >
+                </p>
+              </div>
+              <div>
+                <img
+                  src="../../assets/img/formulas/MALLA_ESTABILIZADA_2.png"
+                  alt="malla-colector-emisor-estabilizada"
+                />
+                <p class="url-direction">
+                  <b>Fuente imagen 2: </b
+                  ><i
+                    >Teoría de circuitos y dispositivos electrónicos, pág.
+                    172</i
+                  >
+                </p>
+              </div>
+            </div>
+            <p>
+              <strong>Nota: </strong> El ejercicio anterior usa la fuente VCC
+              como sus fuentes principales, en ambientes reales puede ser asi de
+              igual manera, o con una fuente conectada a la base que tiene por
+              nombre VBB.
+            </p>
+          </div>
+        </div>
+        <div class="formules">
+          <h3>Fórmulas</h3>
+          <strong>Corriente de base</strong>
+          <img
+            src="../../assets/img/formulas/ESTABILIZADA_CORRIENTE_BASE.jpg"
+            alt="c_base_estabilizada"
+            class="img-160"
+          />
+          <strong>Corriente de colector</strong>
+          <img
+            src="../../assets/img/formulas/ESTABILIZADA_CORRIENTE_COLECTOR.jpg"
+            alt="c_colector_estabilizada"
+            class="img-80"
+          />
+          <strong>Corriente de emisor</strong>
+          <img
+            src="../../assets/img/formulas/ESTABILIZADA_CORRIENTE_EMISOR.jpg"
+            alt="c_emisor_estabilizada"
+          />
+          <strong>Voltaje colector-emisor</strong>
+          <img
+            src="../../assets/img/formulas/ESTABILIZADA_VOLT_COLECTOR_EMISOR.jpg"
+            alt="v_colector_emisor_estabilizada"
+            class="img-180"
+          />
+          <strong>Corriente de saturación></strong>
+          <img
+            src="../../assets/img/formulas/ESTABILIZADA_CORRIENTE_SATURACION.jpg"
+            alt="c_saturacion_estabilizada"
+            class="img-200"
+          />
+          <strong>Voltaje de corte</strong>
+          <img
+            src="../../assets/img/formulas/ESTABILIZADA_VOLT_CORTE.jpg"
+            alt="v_corte_estabilizada"
+            class="img-180"
+          />
+          <strong>Voltaje de base con respecto a tierra</strong>
+          <img
+            src="../../assets/img/formulas/ESTABILIZADA_VOLT_BASE_TIERRA.jpg"
+            alt="v_base_tierra_estabilizada"
+            class="img-140"
+          />
+          <strong>Voltaje de colector con respecto a tierra</strong>
+          <img
+            src="../../assets/img/formulas/ESTABILIZADA_VOLT_COLECTOR_TIERRA.jpg"
+            alt="v_colector_tierra_estabilizada"
+            class="img-140"
+          />
+          <strong>Voltaje emisor</strong>
+          <img
+            src="../../assets/img/formulas/ESTABILIZADA_VOLT_EMISOR.jpg"
+            alt="v_emisor_estabilizada"
+            class="img-90"
+          />
+        </div>
+      </div>
+    </section>
+    <section class="container" id="bjt-divisor-tension">
+      <div class="reveal">
+        <h1 class="title">BJT - Polarización por divisor de tensión</h1>
+        <p>
+          También llamada “polarización universal” o “auto polarizado”, esta es
+          la forma más adecuada para hacer trabajar el transistor en la zona
+          lineal o activa.
+        </p>
+        <p>
+          El VB mantiene su valor constante, IB quedará controlado por la
+          variación de VBE con lo que un eventual aumento de IC provocará un
+          aumento de VE y la consiguiente disminución de VBE y de la corriente
+          de base (IB), la cual tiende a corregir la desviación de IC.
+        </p>
+        <div class="wrapper__information">
+          <div class="wrapper__content-images">
+            <h3>Estructura</h3>
+            <div class="wrapper__images">
+              <div>
+                <img
+                  src="../../assets/img/formulas/MALLA_DIVISOR_1.png"
+                  alt="malla-divisor"
+                />
+                <p class="url-direction">
+                  <b>Fuente imagen 1 </b
+                  ><i
+                    >Teoría de circuitos y dispositivos electrónicos, pág.
+                    177</i
+                  >
+                </p>
+              </div>
+              <div>
+                <img
+                  class="img-300"
+                  src="../../assets/img/formulas/MALLA_DIVISOR_EQV.png"
+                />
+                <p class="url-direction">
+                  <b>Fuente imagen 2: </b
+                  ><i
+                    >https://www.cartagena99.com/recursos/alumnos/apuntes/T7_Transistores%20bipolares%20-%20BJT%202.pdf,
+                    pág. 11</i
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="formules" id="polarizacion-divisor-tension">
+          <h3>Fórmulas</h3>
+
+          <strong>Voltaje de Thévenin</strong>
+          <img
+            src="../../assets/img/formulas/DIVISOR_VTH.jpg"
+            alt="v_thevenin_divisor"
+            class="img-140"
+          />
+          <strong>Resistencia de Thévenin</strong>
+          <img
+            src="../../assets/img/formulas/DIVISOR_RTH.jpg"
+            alt="r_thevenin_divisor"
+            class="img-140"
+          />
+          <strong>Corriente de base</strong>
+          <img
+            src="../../assets/img/formulas/DIVISOR_CORRIENTE_BASE.jpg"
+            alt="c_base_divisor"
+            class="img-150"
+          /><strong>Corriente de colector</strong>
+          <img
+            src="../../assets/img/formulas/DIVISOR_CORRIENTE_COLECTOR.jpg"
+            alt="c_colector_divisor"
+            class="img-80"
+          /><strong>Corriente de emisor</strong>
+          <img
+            src="../../assets/img/formulas/DIVISOR_CORRIENTE_EMISOR.jpg"
+            alt="c_emisor_divisor"
+          /><strong>Voltaje de colector - emisor</strong>
+          <img
+            src="../../assets/img/formulas/DIVISOR_VOLT_COLECTOR_EMISOR.jpg"
+            alt="v_colector_emisor_divisor"
+            class="img-180"
+          /><strong>Corriente de saturación</strong>
+          <img
+            src="../../assets/img/formulas/DIVISOR_CORRIENTE_SATURACION.jpg"
+            alt="c_saturacion_divisor"
+            class="img-200"
+          /><strong>Voltaje de corte</strong>
+          <img
+            src="../../assets/img/formulas/DIVISOR_VOLT_CORTE.jpg"
+            alt="v_corte_divisor"
+            class="img-180"
+          /><strong>Voltaje de base - tierra</strong>
+          <img
+            src="../../assets/img/formulas/DIVISOR_VOLT_BASE_TIERRA.jpg"
+            alt="v_base_tierra_divisor"
+            class="img-140"
+          /><strong>Voltaje de colector - tierra</strong>
+          <img
+            src="../../assets/img/formulas/DIVISOR_VOLT_COLECTOR_TIERRA.jpg"
+            alt="v_colector_tierra_divisor"
+            class="img-140"
+          /><strong>Voltaje de emisor</strong>
+          <img
+            src="../../assets/img/formulas/DIVISOR_VOLT_EMISOR.jpg"
+            alt="v_emisor_divisor"
+            class="img-90"
+          />
+        </div>
+      </div>
+    </section>
+    <section class="container" id="condensadores">
+      <div class="reveal">
+        <h1 class="title">Condensadores de acople y desacople</h1>
+        <p>
+          Un condensador de acoplo (también llamado un condensador de
+          acoplamiento) es un condensador que se utiliza para enlazar sólo la
+          señal de AC de un elemento de circuito a otro. El condensador tambien
+          se encarga de "eliminar" la componente DC de la señal.
+        </p>
+        <p>
+          Los condensadores de acoplo son útiles en muchos tipos de circuitos
+          donde la componencte de AC son las señales deseadas para ser emitidas
+          mientras que las señales de DC se usan solamente para proporcionar
+          energía a ciertos componentes en el circuito pero no deben aparecer en
+          la salida.
+        </p>
+        <p>
+          Por otro lado, El condensador de desacoplo se encarga de hacer justo
+          lo contrario, es decir, eliminar la componente rizada (señal AC) y
+          dejar solo la continua (señal DC).
+        </p>
+        <div class="wrapper__content-images">
+          <h3>Estructura</h3>
+
+          <img src="../../assets/img/acoplo-desacoplo.gif" class="img-500" />
+          <p class="url-direction">
+            <b>Fuente: </b
+            ><i
+              >https://electronica.ilaweb.com/wp-content/uploads/2010/12/Image229.gif</i
+            >
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="container" id="modelo-t">
+      <div class="reveal">
+        <h1 class="title">Modelo T</h1>
+        <p>
+          Llamado modelo simplificado de Ebers-Moll Las variaciones en pequeña
+          señal son despreciables respecto a las de polarización en DC. No
+          afectando a los puntos de polarización calculados. Estos modelos serán
+          para aplicaciones de baja frecuencia
+        </p>
+        <img src="../../assets/img/formulas/MODELO_T.png" />
+        <!-- <img src="../../assets/img/formulas/ZIN_BASE.png" /> -->
+      </div>
+    </section>
+    <section class="container" id="modelo-doblet">
+      <div class="reveal">
+        <h1 class="title">Modelo π</h1>
+        <p>
+          Es un modelo que ayuda a entender de mejor manera la ganancia entre
+          circuitos con transistores
+        </p>
+        <img src="../../assets/img/formulas/MODELO_PI.png" />
+        <p class="url-direction">
+          <b>Fuente: </b
+          ><i
+            >https://lh3.googleusercontent.com/proxy/vUED6mgfvp-C230FHJ2T2NkflmZhDadu7T4lMxgvsvejaGTA77vb8zlYmFE_pprJgPcbL7JCABiFMkyrlEmC_sEXxqnIznaar3xX6eF5xWG2n4FGGKYMgFI</i
+          >
+        </p>
+      </div>
+    </section>
+    <section class="container" id="ganacia-voltaje-av">
+      <div class="reveal">
+        <h1 class="title">Ganancia de voltaje AV</h1>
+        <p>
+          Es la magnitud que caracteriza la amplificación en tensión de un
+          dispositivo ante una determinada señal. Se obtiene realizando la
+          división entre el valor de la tensión de entrada y el valor de la
+          tensión de salida.
+        </p>
+        <div class="wrapper__content-images">
+          <h3>Fórmula</h3>
+          <img src="../../assets/img/formulas/ganancia-AV.png" />
+        </div>
+      </div>
+    </section>
+    <section class="container" id="amplificadores-multietapa-bjt">
+      <div class="reveal">
+        <h1 class="title">Amplificadores multietapa - BJT</h1>
+        <p>
+          Los amplificadores multietapa son circuitos electrónicos formados por
+          varios transistores (BJT), que pueden ser acoplados en forma directa o
+          mediante capacitores.
+        </p>
+        <p>
+          Se llama amplificador multietapa a los circuitos o sistemas que tienen
+          múltiples transistores y además pueden ser conectados entre sí para
+          mejorar sus respuestas tanto en ganancia Zin o Zout.
+        </p>
+        <div class="wrapper__information">
+          <div class="wrapper__content-images">
+            <h3>Estructura</h3>
+            <div class="wrapper__images">
+              <img
+                src="../../assets/img/formulas/amplificación-multietapa.png"
+              />
+            </div>
+            <p class="url-direction">
+              <b>Fuente: </b
+              ><i
+                >http://files.electronica56.webnode.es/200000011-ed161ee10a/AmpliFIcadores%20Multietapa.pdf</i
+              >
+            </p>
+          </div>
+        </div>
+        <div class="formules" id="formules-multietapa">
+          <h3>Fórmulas</h3>
+          <img
+            src="../../assets/img/formulas/FORMULA_AMPLIFICACION_MULTIETAPA.png"
+          />
+          <img src="../../assets/img/formulas/FORMULA_AMPLIFICACION_ZIN.png" />
+          <img src="../../assets/img/formulas/FORMULA_AMPLIFICACION_ZOUT.png" />
+          <img src="../../assets/img/formulas/FORMULA_AMPLIFICACION_rc.png" />
+          <img src="../../assets/img/formulas/FORMULA_AMPLIFICACION_re.png" />
+          <img src="../../assets/img/formulas/FORMULA_AMPLIFICACION_AV.png" />
+        </div>
+      </div>
+    </section>
+    <section class="container" id="JFET">
+      <div class="reveal">
+        <h1 class="title">JFET</h1>
+        <p>
+          Es un transistor de efecto campo de la puerta de unión. Es un
+          dispositivo controlado por voltaje que puede ser usado como
+          interruptor electrónicamente controlado, amplificador o resistencia
+          controlada por voltaje.
+        </p>
+        <p>
+          El JFET proporciona un bajo consumo de energía y disipaciones de
+          energía bastante bajas mejorando considerablemente la eficiencia
+          general del circuito. También proporciona una impedancia de entrada
+          muy alta, lo cual es una gran ventaja frente a los BJT.
+        </p>
+        <p>
+          Los JFET tiene tres terminales: Puerta (G), Drenaje (D) y Fuente (S)
+        </p>
+
+        <div class="wrapper__content-images">
+          <h3>Simbologia</h3>
+          <img
+            class="img-300"
+            src="../../assets/img/formulas/jfet-simbologia.png"
+          />
+          <p class="url-direction">
+            <strong>Imagen 1: </strong>Canal N |
+            <strong>Imagen 2: </strong>Canal P
+          </p>
+          <img
+            class="img-400"
+            src="../../assets/img/formulas/jfet-simbologia-canales.png"
+          />
+        </div>
+        <p>
+          Cuando el valor de VGS es igual a 0, el canal esta en su apertura
+          maxima, a medida de que el valor de VGS se aleja de 0 negativamente el
+          canal empezará a angostarse.
+        </p>
+        <p>
+          Finalmente, cuando el valor de VGS sea igual a el punto de corte
+          maximo del JFET el canal se cerrará debido a que la región de
+          agotamiento es demasiado grande.
+        </p>
+      </div>
+    </section>
+    <section class="container" id="jfet-tipica">
+      <div class="reveal">
+        <h1 class="title">JFET - Polarización típica</h1>
+        <p>
+          Es la configuración más simple para el JFET, es una de las pocas
+          configuraciones de FET que puede resolverse de un modo directo con un
+          método matemático, o con un método gráfico.
+        </p>
+        <div class="wrapper__content-images">
+          <h3>Estructura</h3>
+          <img
+            src="../../assets/img/Cursos/electronica-2/JFET/graph-típica.png"
+          />
+          <p class="url-direction">
+            <strong>Fuente: </strong
+            ><i>Teoría de circuitos y dispositivos electrónicos, pág. 413</i>
+          </p>
+
+          <p>
+            Es la forma menos indicada de polarizar ciertos modelos del
+            transistor JFET puesto que depende mucho del transistor empleado.
+          </p>
+
+          <p>
+            Ahora, análizando el circuito en DC, La caída de 0 V a través de RG
+            permite reemplazar VG por un corto circuito equivalente, como el que
+            aparece en la siguiente figura.
+          </p>
+          <img
+            src="../../assets/img/Cursos/electronica-2/JFET/graph-típica_1.png"
+          />
+          <p class="url-direction">
+            <strong>Fuente: </strong
+            ><i>Teoría de circuitos y dispositivos electrónicos, pág. 414</i>
+          </p>
+        </div>
+        <p>
+          Observamos que el terminal negativo de la bateria VGG se encuentra
+          conectado directamente a el pin positivo de VGS, esto refleja bien que
+          la polarización de VGS esta colocada de manera opuesta a la de VGG,
+          por lo cual:
+        </p>
+        <img
+          src="../../assets/img/Cursos/electronica-2/JFET/formula-VGS_4.png"
+        />
+
+        <p>
+          Como VGG es una fuente de DC fija, la magnitud de tensión VGS tambien
+          lo es, de ahí proviene el nombre de configuración de polarización
+          fija.
+        </p>
+        <p>
+          Usando la ecuación de Shockley podemos hallar ahora el nivel
+          resultante de la corriente de drenaje ID:
+        </p>
+        <img
+          src="../../assets/img/Cursos/electronica-2/JFET/corriente-drenador.png"
+        />
+
+        <p>
+          Como VGS es valor fijo para esta configuración, su magnitud y signo
+          simplemente se sustituyen en la ecuación de Shockley para calcular el
+          valor de ID. Ésta es una de las pocas instancias en que la solución
+          matemática de una configuración de FET es bastante directa.
+        </p>
+        <p>
+          Para realizar un análisis gráfico se requiere una gráfica de la
+          ecuación de Shockley, como se muestra en la siguiente figura:
+        </p>
+        <img src="../../assets/img/Cursos/electronica-2/JFET/Shockley.png" />
+        <p class="url-direction">
+          <strong>Fuente: </strong
+          ><i>Teoría de circuitos y dispositivos electrónicos, pág. 414</i>
+        </p>
+        <p>Como se pudo observar en la anterior imagen, si tomamos:</p>
+        <img
+          src="../../assets/img/Cursos/electronica-2/JFET/formula-VGS_5.png"
+        />
+        <p>tendremos una corriente de drenador:</p>
+        <img
+          src="../../assets/img/Cursos/electronica-2/JFET/formula-ID_3.png"
+        />
+        <p>
+          El voltaje del drenaje a la fuente (VDS) de la sección de salida se
+          hallá al aplicar la ley de voltajes de Kirchhoff:
+        </p>
+        <img src="../../assets/img/Cursos/electronica-2/JFET/formula-VDS.png" />
+        <p>
+          Ahora, hallando los voltajes de índice único debemos recordar que
+          estos son aquellos en los que se refiere voltaje con respecto a tierra
+          (GND), para ello están las siguientes ecuaciones:
+        </p>
+        <img
+          src="../../assets/img/Cursos/electronica-2/JFET/formulas_tipica.png"
+        />
+      </div>
+    </section>
+    <section class="container" id="jfet-auto-polarizada">
+      <div class="reveal">
+        <h1 class="title">JFET - Polarización auto-polarizada</h1>
+        <p>También conocida como autopolarizado por resistencia de fuente.</p>
+        <p>
+          En este circuito solo ocupamos una fuente, (la de drenador),
+          eliminando la fuente de la puerta que está presente en la polarización
+          típica. El voltaje del pin a la fuente ahora lo determina el voltaje a
+          través de un resistor RS. Este circuito es más estable que el anterior
+          y elimina la necesidad de dos fuentes de DC.
+        </p>
+        <div class="wrapper__content-images">
+          <h3>Estructura</h3>
+          <img
+            src="../../assets/img/Cursos/electronica-2/JFET/graph-auto-polarizada.png"
+          />
+          <p class="url-direction">
+            <strong>Fuente: </strong
+            ><i>Teoría de circuitos y dispositivos electrónicos, pág. 417</i>
+          </p>
+          <p>
+            Para el análisis en DC los condensadores pueden reemplazarse por
+            circuitos abiertos, y el resistor RG puede cambiarse por un corto
+            circuito equivalente dado que IG = 0A.
+          </p>
+          <img
+            src="../../assets/img/Cursos/electronica-2/JFET/graph-auto-polarizada_1.png"
+          />
+          <p class="url-direction">
+            <strong>Fuente: </strong
+            ><i>Teoría de circuitos y dispositivos electrónicos, pág. 417</i>
+          </p>
+        </div>
+        <p>
+          La corriente a través de RS es la corriente de la fuente IS, pero IS =
+          ID
+        </p>
+        <img
+          src="../../assets/img/Cursos/electronica-2/JFET/formula-VRS.png"
+          alt=""
+        />
+        <p>
+          La configuración de la red define la ecuación VGS = -ID*RS y la
+          ecuación de Shockley relaciona las cantidades de entrada y salida del
+          dispositivo. Ambas ecuaciones relacionan las mismas dos variables, lo
+          que permite o una solución matemática o una solución gráfica.
+        </p>
+
+        <p>
+          Ahora, con sólo sustituir la ecuación VGS = -ID*RS en la ecuación de
+          Shockley, obtenemos una solución matemática de la siguiente manera:
+        </p>
+        <img
+          src="../../assets/img/Cursos/electronica-2/JFET/formula-ID_1.png"
+          alt=""
+        />
+
+        <div class="wrapper__content-images">
+          <img
+            src="../../assets/img/Cursos/electronica-2/JFET/graph-auto-polarizada_2.png"
+          />
+          <p class="url-direction">
+            <strong>Fuente: </strong
+            ><i>Teoría de circuitos y dispositivos electrónicos, pág. 418</i>
+          </p>
+          <p>
+            De igual manera que en la polarización típica (fija), si tomamos:
+          </p>
+          <img
+            src="../../assets/img/Cursos/electronica-2/JFET/formula-VGS_5.png"
+          />
+          <p>tendremos una corriente de drenador:</p>
+          <img
+            src="../../assets/img/Cursos/electronica-2/JFET/formula-ID_3.png"
+          />
+
+          <p>Como resultado obtenemos un segundo punto para la línea recta</p>
+
+          <p>
+            El segundo punto para la ecuación VGS = -ID*RS requiere que se
+            seleccione un nivel de VGS o ID y el nivel correspondiente de la
+            otra cantidad se determine con la ecuación VGS = -ID*RS. Los niveles
+            resultantes de ID e VGS definirán entonces otro punto sobre la línea
+            recta y permitirán trazarla. Suponga, por ejemplo, que seleccionamos
+            un nivel de ID igual a la mitad del nivel de saturación. Es decir,
+          </p>
+
+          <img
+            src="../../assets/img/Cursos/electronica-2/JFET/formula-ID_2.png"
+          />
+          <img
+            src="../../assets/img/Cursos/electronica-2/JFET/formula-VGS_3.png"
+          />
+          <img
+            src="../../assets/img/Cursos/electronica-2/JFET/graph-auto-polarizada_3.png"
+          />
+          <p class="url-direction">
+            <strong>Fuente: </strong
+            ><i>Teoría de circuitos y dispositivos electrónicos, pág. 418</i>
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="container" id="jfet-divisor-tension">
+      <div class="reveal">
+        <h1 class="title">JFET - Polarización por divisor de tensión</h1>
+
+        <p>
+          La configuración del divisor de voltaje aplicada a amplificadores con
+          transistores BJT también se aplica a amplificadores con FET, la
+          construcción básica es exactamente la misma, pero el análisis de cada
+          una es muy diferente.
+        </p>
+        <p>
+          Para los amplificadores JFET, IG = 0 A, pero la magnitud de IB para
+          los BJT puede afectar los niveles de corriente y voltaje de DC tanto
+          en los circuitos de entrada como en los de salida.
+        </p>
+        <p>
+          Cabe recalcar que IB proporcionó la relación entre los circuitos de
+          entrada y de salida para la configuración de divisor de voltaje para
+          el BJT, en cambio VGS hará lo mismo en la configuración a JFET.
+        </p>
+
+        <p>
+          Es la forma más segura de saber que el punto de funcionamiento o
+          trabajo Q va a estar en el punto que se estabilice. La forma de
+          calcular es exactamente igual que los transistores que se le aplica
+          Thevening.
+        </p>
+        <div class="wrapper__content-images">
+          <h3>Estructura</h3>
+          <img
+            src="../../assets/img/Cursos/electronica-2/JFET/graph-divisor-tension.png"
+          />
+          <p class="url-direction">
+            <strong>Fuente: </strong
+            ><i>Teoría de circuitos y dispositivos electrónicos, pág. 422</i>
+          </p>
+
+          <p>
+            Para el análisis en DC redibujamos la red de la figura anterior como
+            se muestra en la siguiente figura:
+          </p>
+          <img
+            src="../../assets/img/Cursos/electronica-2/JFET/graph-divisor-tension_1.png"
+          />
+          <p class="url-direction">
+            <strong>Fuente: </strong
+            ><i>Teoría de circuitos y dispositivos electrónicos, pág. 422</i>
+          </p>
+          <p>
+            Vemos que todos los capacitores incluyendo el Capacitor de desacople
+            (CS), han sido reemplazados por un circuito abierto equivalente. A
+            demás, se separarón en dos fuentes equivalente la fuente VDD con el
+            objeto de permitir una separación mayor de las regiones de entrada y
+            salida de la red.
+          </p>
+        </div>
+
+        <p>
+          Debido a que IG = 0A, la Ley de corriente Kirchhoff requiere que IR1 =
+          IR2 y que el circuito equivalente en serie que aparece a la izquierda
+          de la figura pueda utilizarse para encontrar el nivel de VG. El
+          voltaje VG, igual que el voltaje a través de R2, puede encontrarse si
+          se utiliza la regla del divisor de voltaje de la siguiente manera:
+        </p>
+        <img
+          src="../../assets/img/Cursos/electronica-2/JFET/formula-VG.png"
+          alt=""
+        />
+        <p>
+          Si aplicamos la ley de voltaje de Kirchhoff en el sentido de las
+          manecillas del reloj en lazo como se indica en la anterior figura,
+          obtenemos:
+        </p>
+        <img
+          src="../../assets/img/Cursos/electronica-2/JFET/formula-VGS.png"
+          alt=""
+        />
+        <p>
+          Sustituyendo el voltaje de la resistencia de la fuente por su
+          equivalente en corriente, obtenemos:
+        </p>
+        <img
+          src="../../assets/img/Cursos/electronica-2/JFET/formula-VRS.png"
+          alt=""
+        />
+        <p>
+          Ahora, sustituyendo la ecuación resultante de VRS dentro de la formula
+          de VGS, nos da como resultado la siguiente formula:
+        </p>
+        <img
+          src="../../assets/img/Cursos/electronica-2/JFET/formula-VGS_1.png"
+          alt=""
+        />
+        <p>
+          El resultado es una ecuación que todavía incluye las mismas dos
+          variables que aparecen en la ecuación de Shockley: VGS e ID.
+        </p>
+        <p>
+          Las cantidades VG y RS están fijas por la construcción de la red.
+          Entonces, si se selecciona ID para ser igual a cero, en esencia se
+          esta estableciendo en algún lugar sobre el eje horizontal. Puede
+          calcularse la localización exacta mediante la simple sustitución de ID
+          = 0 mA y encontrando el valor resultante de VGS de la siguiente
+          manera:
+        </p>
+        <img
+          src="../../assets/img/Cursos/electronica-2/JFET/formula-VGS_2.png"
+          alt=""
+        />
+        <p>
+          El resultado especifica que siempre que grafiquemos la ecuación de VGS
+          = VG - ID*RS, si seleccionamos ID = 0 A, el valor de VGS para la
+          gráfica será de VG. El punto recién determinado aparece en la sguiente
+          figura:
+        </p>
+        <img
+          src="../../assets/img/Cursos/electronica-2/JFET/grafica-puntoQ.png"
+          alt=""
+        />
+        <p class="url-direction">
+          <strong>Fuente: </strong
+          ><i>Teoría de circuitos y dispositivos electrónicos, pág. 423</i>
+        </p>
+        <p></p>
+        <p>
+          Para encontrar otro punto, empleamos ahora el hecho de que cualquier
+          punto sobre el eje vertical VGS = 0 V y resolvemos para el valor
+          resultante de ID.
+        </p>
+        <img
+          src="../../assets/img/Cursos/electronica-2/JFET/formula-ID.png"
+          alt=""
+        />
+
+        <p>
+          Una vez que están calculados los valores estables de IDΩ y de VGSQ, el
+          análisis restante de la red puede desarrollarse de la manera usual.
+        </p>
+        <div class="formules" id="polarizacion-divisor-tension">
+          <h3>Fórmulas</h3>
+          <img
+            src="../../assets/img/Cursos/electronica-2/JFET/formulas.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+
+    <script>
+      require("../../assets/javascript/IndexApp.js");
+    </script>
+
+    <script>
+      window.addEventListener("scroll", () => {
+        var scroll = document.querySelector(".scrollTop");
+        scroll.classList.toggle("active", window.scrollY > 50);
+      });
+
+      window.addEventListener("scroll", reveal);
+      function reveal() {
+        var reveals = document.querySelectorAll(".reveal");
+
+        for (var i = 0; i < reveals.length; i++) {
+          var windowheight = window.innerHeight;
+          var revealtop = reveals[i].getBoundingClientRect().top;
+          var revealpoint = 150;
+
+          if (revealtop < windowheight - revealpoint) {
+            reveals[i].classList.add("active");
+          } else {
+            reveals[i].classList.remove("active");
+          }
+        }
+      }
+    </script>
+    <script src="../../assets/js/typing.js"></script>
+  </body>
+</html>

@@ -1,0 +1,197 @@
+// $midnight: #2c3e50;
+// $clouds: #ecf0f1;
+// // General
+// // body {
+// //   color: $midnight;
+// //   background: $clouds;
+// //   padding: 0 1em 1em;
+// // }
+// h1 {
+//   margin: 0;
+//   line-height: 2;
+//   text-align: center;
+// }
+// h2 {
+//   margin: 0 0 .5em;
+//   font-weight: normal;
+// }
+// input {
+//   position: absolute;
+//   opacity: 0;
+//   z-index: -1;
+// }
+// // Layout
+// .row {
+//     width: 90%;
+//     margin: auto;
+//   display:flex;
+//   align-items: center;
+//   justify-content: center;
+//   .col {
+//     flex:1;
+//     &:last-child {
+//       margin-left: 1em;
+//     }
+//   }
+// }
+// /* Accordion styles */
+// .tabs {
+//   border-radius: 8px;
+//   overflow: hidden;
+//   box-shadow: 0 4px 4px -2px rgba(0,0,0,0.5);
+// }
+// .tab {
+//   width: 100%;
+//   color: white;
+//   overflow: hidden;
+//   &-label {
+//     display: flex;
+//     justify-content: space-between;
+//     padding: 1em;
+//     background: $midnight;
+//     font-weight: bold;
+//     cursor: pointer;
+//     /* Icon */
+//     &:hover {
+//       background: darken($midnight, 5%);
+//     }
+//     &::after {
+//       content: "\276F";
+//       width: 1em;
+//       height: 1em;
+//       text-align: center;
+//       transition: all .35s;
+//     }
+//   }
+//   &-content {
+//     max-height: 0;
+//     padding: 0 1em;
+//     color: $midnight;
+//     background: white;
+//     transition: all .35s;
+//   }
+//   &-close {
+//     display: flex;
+//     justify-content: flex-end;
+//     padding: 1em;
+//     font-size: 0.75em;
+//     background: $midnight;
+//     cursor: pointer;
+//     &:hover {
+//       background: darken($midnight, 5%);
+//     }
+//   }
+// }
+
+// // :checked
+// input:checked {
+//   + .tab-label {
+//     background: darken($midnight, 10%);
+//     &::after {
+//       transform: rotate(90deg);
+//     }
+//   }
+//   ~ .tab-content {
+//     max-height: 100vh;
+//     padding: 1em;
+//   }
+// }
+
+.shit {
+  max-width: 90%;
+//   min-height: 100vh;
+  width: 100%;
+  margin: 100px auto;
+  padding: 25px 30px 30px 30px;
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+}
+.shit header {
+  font-size: 30px;
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+.shit nav {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+.shit nav label {
+  display: block;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  color: #202020;
+  font-size: 16px;
+  border-radius: 10px;
+  margin: 0 5px;
+  transition: all 0.3s ease;
+}
+.shit nav label:hover {
+  background: rgba(23, 162, 184, 0.3);
+}
+#home:checked ~ nav label.home,
+#blog:checked ~ nav label.blog,
+#code:checked ~ nav label.code,
+#help:checked ~ nav label.help,
+#about:checked ~ nav label.about {
+  color: #f0f2f5;
+  background: #17a2b8;
+  text-align: center;
+}
+// nav label i {
+//   padding-right: 7px;
+// }
+nav .slider {
+  // position: absolute;
+  // height: 100%;
+  // width: 30%;
+  // left: 0;
+  // bottom: 0;
+  // z-index: 0;
+  // border-radius: 5px;
+  background: #17a2b8;
+  transition: all 0.3s ease;
+}
+input[type="radio"] {
+  display: none;
+}
+#blog:checked ~ nav .slider {
+  left: 20%;
+}
+#code:checked ~ nav .slider {
+  left: 40%;
+}
+#help:checked ~ nav .slider {
+  left: 60%;
+}
+#about:checked ~ nav .slider {
+  left: 80%;
+}
+section .content {
+  display: none;
+  background: #fff;
+}
+#home:checked ~ section .content-1,
+#blog:checked ~ section .content-2,
+#code:checked ~ section .content-3,
+#help:checked ~ section .content-4,
+#about:checked ~ section .content-5 {
+  display: block;
+}
+section .content .title {
+  font-size: 21px;
+  font-weight: 500;
+  margin: 30px 0 10px 0;
+}
+section .content p {
+  text-align: justify;
+}

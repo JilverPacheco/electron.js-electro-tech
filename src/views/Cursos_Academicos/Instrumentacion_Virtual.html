@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Electró-TECH | Instrumentación virtual</title>
+    <link rel="stylesheet" href="../../assets/styles/container.css" />
+    <link rel="stylesheet" href="../../assets/styles/Styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+  <body>
+    <!-- Button Scroll Top -->
+    <a class="scroll-btn" href="#inicio">
+      <div class="scrollTop">▲</div>
+    </a>
+
+    <!-- Hamburger Menu -->
+    <div class="btn animate__animated animate__fadeIn">
+      <div class="menu-btn__burger"></div>
+    </div>
+
+    <!--  Sidebar -->
+    <nav class="sidebar">
+      <div class="text">
+        <a href="https://web.udi.edu.co/"
+          ><img src="../../assets/img/logo/LOGO_UDI.png" class="logo"
+        /></a>
+      </div>
+
+      <ul>
+        <li>
+          <p class="feat-btn">Proyectos<span class="first">▼</span></p>
+          <ul class="feat-show">
+            <li>
+              <a href="#proceso-cerveza" class="sidebarButton">SCADA del proceso de creación de cerveza</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+    <header class="banner" id="inicio">
+      <h1 class="banner-title animate__animated animate__fadeIn">
+        Instrumentación virtual
+      </h1>
+      <h2 class="banner-sub-title animate__animated animate__fadeIn">
+        Curso académico
+      </h2>
+     
+      <a href="../index.html"
+        >Volver a inicio</a
+      >
+    </header>
+
+    <!-- <section class="proyects reveal">
+      <h1>LabView</h1>
+    </section> -->
+
+    <section class="wrapper__proyects">
+      <div class="proyects-title">
+        <h2 class="reveal">Proyectos</h2>
+      </div>
+      <div class="container-proyects" id="proceso-cerveza">
+        <div>
+          <h3>
+            Implementación de un instrumento virtual didáctico desarrollado en
+            LabView para la creación de cerveza
+          </h3>
+          <h4>Explicación</h4>
+          <p>
+            Instrumento virtual en el que se explica de manera básica
+            el proceso que se lleva a cabo para creación de cerveza dentro de
+            LabView.
+          </p>
+
+          <p>
+            Con el interruptor ON activo, automáticamente se activan los
+            sensores y alarmas que se encuentran modificados, es importante
+            primero variar los controladores.
+          </p>
+        </div>
+        <div class="reveal">
+          <h3>
+            Implementación de un instrumento virtual didáctico desarrollado en
+            LabView para la creación de cerveza
+          </h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
+            magnam dignissimos ad delectus aut inventore totam accusamus
+            quisquam ipsa atque culpa magni, minus odio eligendi tenetur
+            blanditiis reprehenderit repellendus iure?
+          </p>
+        </div>
+        <!-- <div>
+          <h3>
+            Implementación de un instrumento virtual didáctico desarrollado en
+            LabView para la creación de cerveza
+          </h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
+            magnam dignissimos ad delectus aut inventore totam accusamus
+            quisquam ipsa atque culpa magni, minus odio eligendi tenetur
+            blanditiis reprehenderit repellendus iure?
+          </p>
+        </div> -->
+      </div>
+    </section>
+
+    <!-- <section class="proyects reveal">
+      <h1>MyOpenLab</h1>
+    </section> -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.min.js"></script>
+    <script src="../../assets/javascript/Scroll.js"></script>
+
+    <script type="text/javascript">
+      window.addEventListener("scroll", reveal);
+
+      function reveal() {
+        var reveals = document.querySelectorAll(".reveal");
+
+        for (var i = 0; i < reveals.length; i++) {
+          var windowheight = window.innerHeight;
+          var revealtop = reveals[i].getBoundingClientRect().top;
+          var revealpoint = 150;
+
+          if (revealtop < windowheight - revealpoint) {
+            reveals[i].classList.add("active");
+          } else {
+            reveals[i].classList.remove("active");
+          }
+        }
+      }
+    </script>
+    <script>
+      require("../../assets/javascript/IndexApp.js");
+    </script>
+
+    <script>
+      window.addEventListener("scroll", () => {
+        var scroll = document.querySelector(".scrollTop");
+        scroll.classList.toggle("active", window.scrollY > 50);
+      });
+    </script>
+  </body>
+</html>

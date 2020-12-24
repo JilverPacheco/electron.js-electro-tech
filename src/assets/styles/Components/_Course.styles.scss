@@ -1,0 +1,135 @@
+// Course
+.courses {
+  min-height: 100vh;
+  background-color: #f0f2f5;
+}
+.course-title {
+  text-align: center;
+  padding: 15px 0px 0px 0px;
+  color: #202020;
+  font-weight: 400;
+  font-size: 50px;
+}
+.course-note {
+  width: 57.5%;
+  margin: 15px auto;
+  padding: 5px;
+  text-align: center;
+  font-weight: lighter;
+  background-color: crimson;
+  border-radius: 5px;
+}
+.course-wrapper {
+  width: 100%;
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.course-card {
+  position: relative;
+  margin: 20px;
+  width: 300px;
+  height: 425px;
+  background-color: #f0f2f5;
+  border-radius: 5px;
+  box-shadow: -5px -5px 5px rgba(255, 255, 255, 0.5),
+    5px 5px 10px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+  &:hover {
+    transform: scale(1.025);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+  }
+  .img-wrapper {
+    width: 300px;
+    height: 300px;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    .img_simulacion {
+      width: 125px;
+    }
+    .first {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      border-radius: 3px;
+    }
+    .second {
+      position: absolute;
+      top: 78px;
+      right: 10px;
+      border-radius: 3px;
+    }
+    .third {
+      position: absolute;
+      top: 166px;
+      left: 10px;
+      border-radius: 3px;
+    }
+    .img {
+      padding: 10px;
+      border-radius: 15px;
+      width: 300px;
+    }
+  }
+  .course-card-title {
+    text-align: center;
+    font-size: 20px;
+    // padding: 10px 0px;
+    margin-top: 10px;
+  }
+  .course-last-modified {
+    //   margin: 20px;
+    text-align: center;
+  }
+  .btn-course-card {
+    width: 90%;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    margin: 5px auto;
+    padding: 8px 0px;
+    border-radius: 5px;
+    border: 2px solid #00689e;
+    color: #f0f2f5;
+    background-color: #00689e;
+    transition: 0.4s;
+    &:hover {
+      border-radius: 10px;
+      background-color: transparent;
+      color: #202020;
+    }
+  }
+}
+
+.proximos_cursos {
+  margin-top: 30px;
+  width: 100%;
+}
+.proximos_cursos h2 {
+  text-align: center;
+  font-weight: lighter;
+}
+.proximos_cursos .proximos {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.proximos_cursos .proximos p {
+  margin: 30px;
+  text-align: center;
+}
+.proximos_cursos .proximos a {
+  text-decoration: none;
+  color: #202020;
+}
+
+// End Course

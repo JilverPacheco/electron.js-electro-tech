@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap");
+
+
+
+
+
+
+
+
+
+
+/* Booklet Cards */
+.wrapper__booklet {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  min-height: 100vh;
+  color: var(--primaryColor);
+}
+.wrapper__booklet section{
+  width: 80%;
+  margin: 0 auto;
+}
+.wrapper__booklet section h3{
+  margin-top: 20px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: lighter;
+}
+
+.wrapper__booklet .segment__title {
+  margin-top: 20px;
+  font-size: 60px;
+  text-align: center;
+
+}
+
+.wrapper__booklet .title {
+  margin-top: 30px;
+  font-size: 40px;
+  text-align: center;
+  font-weight: lighter;
+
+}
+.wrapper__booklet .cards {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.wrapper__booklet .cards .text-card {
+  width: 300px;
+  height: 400px;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: -5px -5px 5px rgba(255, 255, 255, 0.5),
+    5px 5px 10px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+
+}
+.wrapper__booklet .cards .text-card:hover {
+  transform: scale(1.05);
+  box-shadow: -5px -5px 5px rgba(255, 255, 255, 0.5),
+    5px 5px 50px rgba(0, 0, 0, 0.4);
+}
+.wrapper__booklet .cards .text-card h3 {
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: lighter;
+
+}
+.wrapper__booklet .cards .text-card .card-sub-title {
+  text-align: center;
+  margin: 10px 0px;
+}
+.wrapper__booklet .cards .text-card .resume {
+  text-align: justify;
+  line-height: 20px;
+}
+.wrapper__booklet .cards .text-card .integrantes {
+  text-align: center;
+  line-height: 25px;
+}
+.wrapper__booklet .cards .text-card ul {
+  margin-left: 20px;
+}
+.wrapper__booklet .cards .text-card ul li {
+  list-style: square;
+}
+
+/* Container */
+
+
+.container > div {
+  margin-bottom: 50px;
+}
+.container .title {
+  font-size: 40px;
+  font-weight: lighter;
+
+  text-align: center;
+}
+.container p {
+  text-align: justify;
+  margin: 10px 0px;
+  line-height: 30px;
+}
+.container ol li {
+  line-height: 30px;
+  margin-left: 16px;
+}
+.container img {
+  display: block;
+  margin: auto;
+}
+.container .url-direction {
+  text-align: center;
+  font-size: 10px;
+}
+
+
+.scrollTop{
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 40px;
+  height: 40px;
+  background: #202020;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s;
+  z-index: 100;
+}
+
+.scrollTop:hover{
+  filter: brightness(2);
+}
+
+.cards a{
+  text-decoration: none;
+  color: #202020;
+}
+
+.scrollTop.active{
+  visibility:visible;
+  opacity: 1;
+  transition: 0.3 ease-in-out;
+}
+
+.scroll-btn{
+  text-decoration: none;
+  color: #f0f2f5;
+}
