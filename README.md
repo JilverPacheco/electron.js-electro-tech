@@ -2,8 +2,8 @@
   Electró-TECH
 </h1>
 <p align="center">
-  Educational application for the electronic engineering students at 
-  <a href="https://github.com/JilverPacheco/react-portfolio-v1" target="_blank">Universidad de Investigación y Desarollo - UDI</a> 
+  Educational application developed in <a href="https://www.electronjs.org/" target="_blank">Electron.JS</a>  for the electronic engineering students at "
+  <a href="https://web.udi.edu.co/" target="_blank">Universidad de Investigación y Desarollo</a>". 
 
 </p>
 <p align="center">
@@ -11,7 +11,7 @@
 </p> 
  
  <p align="center">
-  <a href="https://app.netlify.com/sites/jilverpacheco/deploys" target="_blank">
+  <a href="#" target="_blank">
     <img src="https://logodownload.org/wp-content/uploads/2020/04/google-drive-logo-6.png" alt="Google Drive" />
   </a>
 </p>
