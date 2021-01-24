@@ -16,6 +16,20 @@
   </a>
 </p>
 
+### What's inside the project?
+
+   
+    ├── assets
+        ├──  icons
+    ├── src
+        ├──  assets
+        ├──  views
+        ├──  index.js
+    ├──  .gitignore
+    ├── package-lock.json
+    ├── package.json
+    └── README.md
+
 ## Get build for any platform.
 If you want to deploy a distribution for one platform use this commands:
 1: **MAC**
